@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: #FFFFFF;
+    padding: 32px;
+    width: 360px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(44, 62, 80, 0.1);
+}
+
+.logo-header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.logo-img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 8px;
+}
+
+.app-name {
+    font-size: 24px;
+    color: #E63946; /* Crimson Red */
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.form-title {
+    font-size: 18px;
+    color: #1D3557; /* Charcoal Blue */
+    margin-bottom: 8px;
+}
+
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1D3557;
+    font-weight: 600;
+}
+
+.input-group {
+    margin-bottom: 16px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    color: #333333;
+    margin-bottom: 6px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #333333;
+}
+
+.input-group input:focus {
+    border-color: #E63946;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #E63946;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #C82333;
+}
+
+.form-link {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #333333;
+}
+
+.form-link a {
+    color: #E63946;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.form-link a:hover {
+    text-decoration: underline;
+}
+

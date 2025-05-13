@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+/* Body and general styling */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FFFFFF;
+    color: #333333;
+}
+
+/* Dashboard Section */
+.dashboard {
+    padding: 60px 10%;
+}
+
+/* Metrics Cards Section */
+.metrics-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+}
+
+.card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1.25em;
+    font-weight: bold;
+    color: #1D3557;
+}
+
+.analytics-section {
+    margin-top: 50px;
+}
+
+.analytics-header {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: #1D3557;
+    margin-bottom: 30px;
+}
+
+/* Flexbox for chart layout */
+.chart-container {
+    display: flex;
+    justify-content: space-between; /* Align charts side by side */
+    gap: 30px;
+}
+
+/* Chart Box */
+.chart-box {
+    width: 48%; /* Decreased width to allow side-by-side layout */
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 400px; /* Increased height of the chart box */
+}
+
+/* Center-align Pie Chart */
+.chart-box.pie-chart {
+    display: flex;
+    justify-content: center;
+}
+
+.chart-description {
+    margin-top: 10px;
+    font-size: 0.95em;
+    color: #555;
+}
+
+/* Styling for the line and pie chart */
+canvas {
+    width: 100%;
+    height: 80% !important; /* Set chart height to fill the box properly */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .chart-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chart-box {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+}
