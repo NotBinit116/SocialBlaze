@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+.admin-revenue-container {
+    padding: 40px 5%;
+    background-color: #f8f9fa;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.admin-revenue-container h2 {
+    color: #1D3557;
+    margin-bottom: 25px;
+}
+
+.summary-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.summary-cards .card {
+    flex: 1 1 200px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+    color: #1D3557;
+}
+
+.summary-cards .card span {
+    display: block;
+    font-size: 1.4em;
+    margin-top: 8px;
+    color: #E63946;
+}
+
+.chart-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.chart {
+    flex: 1;
+    min-height: 280px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    color: #999;
+}
+
+.filter-bar {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.filter-bar input[type="text"],
+.filter-bar input[type="date"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #CCC;
+    flex: 1;
+}
+
+.filter-bar .filter-btn {
+    background-color: #1D3557;
+    color: #fff;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.table-heading {
+    color: #1D3557;
+    margin: 20px 0 10px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.revenue-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.revenue-table th,
+.revenue-table td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.revenue-table th {
+    background-color: #F1C40F;
+    color: #1D3557;
+    font-weight: bold;
+}
+
+.revenue-table td a {
+    color: #1D3557;
+    text-decoration: underline;
+}
+
+.revenue-table .badge {
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.badge.paid {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+.badge.pending {
+    background-color: #f39c12;
+    color: #fff;
+}
+
+.badge.failed {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.revenue-table button {
+    padding: 6px 12px;
+    border: none;
+    background-color: #457B9D;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.revenue-table button:hover {
+    background-color: #1D3557;
+}
+
+
+.filter-btn {
+    margin-left: 10px;
+    padding: 6px 12px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.filter-btn:hover {
+    background-color: #bbb;
+}

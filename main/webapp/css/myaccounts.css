@@ -1,0 +1,280 @@
+@charset "UTF-8";
+
+/* Main container */
+.accounts-container {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header section */
+.accounts-header {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.accounts-header h1 {
+    font-size: 32px;
+    color: #333;
+    margin: 0;
+}
+
+.add-account-btn {
+    padding: 10px 20px;
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.add-account-btn:hover {
+    background-color: #357ABD;
+}
+
+/* Grid container for cards */
+.accounts-grid {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Each card */
+.account-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1100px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.account-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Font Awesome Icon as Platform Logo */
+.platform-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #4A90E2;
+}
+
+/* Text content */
+.account-card h3 {
+    font-size: 22px;
+    margin: 5px 0;
+    color: #444;
+}
+
+.account-card p {
+    font-size: 16px;
+    color: #777;
+    margin: 4px 0;
+}
+
+.account-card a {
+    font-size: 14px;
+    color: #4A90E2;
+    word-break: break-word;
+    margin-bottom: 12px;
+}
+
+/* Action buttons */
+.card-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+.card-actions button {
+    padding: 6px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-btn {
+    background-color: #F5A623;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #d98c1f;
+}
+
+.delete-btn {
+    background-color: #D0021B;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #a40014;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .accounts-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        width: 90%;
+    }
+
+    .add-account-btn {
+        align-self: stretch;
+        justify-content: center;
+    }
+
+    .account-card {
+        width: 100%;
+    }
+}
+
+/* Flyout Overlay */
+.flyout-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 150;
+}
+
+/* Flyout Panel */
+.flyout {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 400px;
+    max-width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    box-shadow: -5px 0 20px rgba(76, 110, 245, 0.3);
+    padding: 32px 28px;
+    z-index: 200;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transform: translateX(100%);
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+/* Show flyout */
+.flyout:not(.hidden) {
+    transform: translateX(0);
+}
+
+/* Hide class */
+.hidden {
+    display: none;
+}
+
+/* Form styling */
+.flyout h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #3a3f58;
+    margin-bottom: 16px;
+}
+
+/* Form labels */
+.flyout label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #4c4c6d;
+}
+
+
+.flyout input[type="text"],
+.flyout input[type="url"],
+.flyout select {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 1rem;
+    border: 2px solid #d0d5e2;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.flyout input:focus,
+.flyout select:focus {
+    border-color: #4c6ef5;
+    box-shadow: 0 0 0 2px rgba(76, 110, 245, 0.2);
+}
+
+.flyout-form h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #4A90E2;
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+.flyout button[type="submit"] {
+    background-color: #4c6ef5;
+    color: white;
+    font-weight: 600;
+    font-size: 1.05rem;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    margin-top: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.flyout button[type="submit"]:hover {
+    background-color: #364fc7;
+}
+
+
+.flyout .close-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #888;
+    align-self: flex-end;
+    cursor: pointer;
+    margin-bottom: -10px;
+    transition: color 0.2s;
+}
+
+.flyout .close-btn:hover {
+    color: #333;
+}
+@media (max-width: 500px) {
+    .flyout {
+        width: 100%;
+        border-radius: 0;
+    }
+}

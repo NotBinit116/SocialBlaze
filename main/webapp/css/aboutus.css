@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+.about-hero {
+    background-color: #1D3557;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.about-hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.about-hero p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: auto;
+    color: #F1C40F;
+}
+
+.mission-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px 10%;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+.mission-text {
+    flex: 1 1 50%;
+    padding-right: 30px;
+}
+
+.mission-text h2 {
+    font-size: 32px;
+    color: #E63946;
+    margin-bottom: 16px;
+}
+
+.mission-text p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.mission-img {
+    flex: 1 1 50%;
+}
+
+.mission-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.values-section {
+    background-color: #F5F5F5;
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.values-section h2 {
+    font-size: 32px;
+    color: #1D3557;
+    margin-bottom: 40px;
+}
+
+.value-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.value-card {
+    flex: 1 1 200px;
+    background-color: #FFFFFF;
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+}
+
+.value-icon {
+    font-size: 40px;
+    color: #E63946;
+    margin-bottom: 15px;
+}
+
+.value-card h3 {
+    font-size: 20px;
+    color: #1D3557;
+    margin-bottom: 10px;
+}
+
+.value-card p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.highlights-section {
+    background-color: #F5F5F5;
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.highlights-section h2 {
+    font-size: 32px;
+    color: #1D3557;
+    margin-bottom: 40px;
+}
+
+.highlights-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.highlight {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 30px 20px;
+    width: 250px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.highlight:hover {
+    transform: translateY(-5px);
+}
+
+.highlight i {
+    font-size: 36px;
+    color: #E63946;
+    margin-bottom: 15px;
+}
+
+.highlight h3 {
+    color: #1D3557;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.highlight p {
+    font-size: 14px;
+    color: #333333;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .highlights-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

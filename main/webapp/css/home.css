@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FFFFFF;
+    color: #333333;
+}
+
+
+.hero-section h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color:black;
+}
+
+.hero-section .get-started-btn {
+    width: 50%; /* Button width set to 50% */
+    background-color: #F1C40F; /* Golden Yellow */
+    color: #1D3557; /* Charcoal Blue */
+    padding: 15px 0; /* Adjusting padding for vertical centering */
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center; /* Centers the text inside the button */
+}
+
+.hero-section .get-started-btn:hover {
+    background-color: #E63946; /* Crimson Red */
+    color: white;
+}
+
+
+.btn-primary, .btn-secondary {
+    background-color: #E63946;
+    color: #FFFFFF;
+    padding: 12px 25px;
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+    background-color: #F1C40F;
+    color: #1D3557;
+}
+
+.features {
+    text-align: center;
+    padding: 60px 10%;
+    background-color: #F5F5F5;
+}
+
+.feature-boxes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.feature {
+    flex: 1 1 200px;
+    padding: 20px;
+    margin: 10px;
+    background: #FFFFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.feature i {
+    font-size: 2em;
+    color: #E63946;
+    margin-bottom: 10px;
+}
+
+.about-us {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px 10%;
+    align-items: center;
+}
+
+.about-img {
+    flex: 1 1 40%;
+    padding-right: 40px;
+}
+
+.about-img img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+.about-text {
+    flex: 1 1 60%;
+}
+
+.pricing {
+    text-align: center;
+    padding: 60px 10%;
+    background-color: #FFFFFF;
+}
+
+.pricing-tiers {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.tier {
+    padding: 20px;
+    background-color: #F5F5F5;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #1D3557;
+    flex: 1 1 100px;
+    max-width: 200px;
+}
